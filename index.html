@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giphy Search Engine" />
+    <meta name="keywords" content="HTML,CSS,JavaScript, Bootstrap">
+    <meta name="author" content="Tina Smith" />
+    <title>Giphy Search</title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+
+<body>
+    <header>
+    
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Giphy Search</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html" title="Home Page">Home</a></li>
+                        <li><a href="about.html" title="About The Developer">About</a></li>
+                        <li><a href="contact.html" title="Contact The Developer">Contact</a></li>
+    
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span><i class="fa-brands fa-github"></i></span> </a></li>
+                        <li><a href="#"><span><i class="fa-brands fa-linkedin"></i></span> </a></li>
+                        <li><a href="#"><span><i class="fa-solid fa-envelope-open-text"></i></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+    <form class="form-inline ">
+        <div class="container homebox">
+            <div class="row homedisplay">
+                <div class="col-md-4 homecols">
+                    <div class="line">
+                        <label class="homelabel">Keyword Search:</label>
+
+                        <input class="form-control mr-sm-2 homeinput" type="text" placeholder="Enter Keyword"
+                            id="keyword" maxlength="20" pattern="[A-Za-z]" required>
+                    </div>
+                </div>
+                <div class="col-md-4 homecols">
+                    <div class="line">
+                        <label class="homelabel">No. of GIFs:</label>
+
+                        <input class="form-control mr-sm-2 homeinput" type="number" max="30" size="2"
+                            placeholder="Enter Number (1-32)" id="gifnumber" min="1">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <label class="homelabel hidden">GIF Search:</label>
+                        <button type="submit" id="search">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <div class="grid-container">
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+
+                <footer>
+
+                </footer>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

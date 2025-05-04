@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giphy Search Engine" />
+    <meta name="keywords" content="HTML,CSS,JavaScript, Bootstrap">
+    <meta name="author" content="Tina Smith" />
+    <title>Contact Me</title>
+
+    <style type="text/css">
+        .contact {
+             background-color:rgb(255, 255, 255,.6);
+    
+        }
+    </style>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+
+<body>
+    <header>
+    
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Giphy Search</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" title="Home Page">Home</a></li>
+                        <li><a href="about.html" title="About The Developer">About</a></li>
+                        <li class="active"><a href="contact.html" title="Contact The Developer">Contact</a></li>
+    
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span><i class="fa-brands fa-github"></i></span> </a></li>
+                        <li><a href="#"><span><i class="fa-brands fa-linkedin"></i></span> </a></li>
+                        <li><a href="#"><span><i class="fa-solid fa-envelope-open-text"></i></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <form action="#" method="POST">
+                        <h3>Message Me Here...</h3>
+                        <!-- <h6>Fill in the form below, I will get back to you within 48 hours.</h6> -->
+                        <fieldset>
+
+                            <nav>
+                                <label>Name: </label>
+                                <p><input id="nameid" type="text" required="required" name="name" /></p>
+                            </nav>
+                            <nav>
+                                <label>E-mail Address: </label>
+                                <p><input id="emailid" type="email" required="required" name="email" /></p>
+                            </nav>
+                            <nav>
+                                <label>Message:</label>
+                                <div>
+                                    <p><textarea id="msgid" name="paragraph_text" cols="50" rows="10"
+                                            required="required"></textarea></p>
+                                    <input id="sendid" type="submit" value="Send Email" name="submit" />
+                                </div>
+                            </nav>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+               
+                <footer>
+                   
+                </footer>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

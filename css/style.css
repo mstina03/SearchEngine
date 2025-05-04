@@ -1,0 +1,329 @@
+html {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+
+}
+
+
+body {
+  height: 100vh;
+  background-color: rgb(240, 162, 174);
+  background-image: url(../img/pink_forest1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+i {
+  font-size: 25px;
+}
+
+.navbar-inverse {
+  background-color: rgb(162, 12, 97);
+}
+
+.homecols {
+
+  background: rgb(162, 12, 97, .3);
+  width: 20rem;
+  height: 5rem;
+
+}
+
+.homebox {
+
+  padding: 3rem;
+  background-color: rgb(162, 12, 97, .3);
+  box-shadow: #888888;
+  width: 25rem;
+  align-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.homelabel {
+
+  text-align: center;
+  font-size: 1rem;
+  width: 18rem;
+  height: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.line {
+  /* border: 5px solid #936dec; */
+  background: rgb(162, 12, 97);
+  height: 2.5rem;
+  width: 18rem;
+}
+
+#gifnumber,
+#keyword {
+  width: 18rem;
+  text-align: center;
+  height: 2rem;
+}
+
+
+
+
+footer {
+  position: relative;
+  margin-top: 3rem;
+  /* negative value of footer height */
+  height: 3rem;
+  clear: both;
+}
+
+#aboutImg {
+  height: 20rem;
+  width: 20rem;
+  border-style: double;
+  border-color: #888888;
+  background: white;
+  border-radius: 50%;
+  margin: 1rem -1rem;
+  text-align: center;
+}
+
+#contactImg {
+  height: 15rem;
+  width: 15rem;
+  margin: 5rem 0rem;
+}
+
+#giphy-img {
+  height: 3rem;
+  width: 5rem;
+}
+
+#emailMe,
+#linkedin {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+#gitHub {
+  height: 2.8rem;
+  width: 2.5rem;
+}
+
+#emailMe:hover,
+#linkedin:hover,
+#gitHub:hover {
+  background-color: #936dec;
+}
+
+.about {
+  margin: 0.5rem 2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+#aboutInfo {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+figcaption {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact {
+  padding: 2rem 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Inquiry {
+  height: 2.5rem;
+  width: 23.75rem;
+  font-size: 2rem;
+  text-align: left;
+}
+
+
+
+
+.homedisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+#emailid,
+#nameid,
+#sendid {
+  height: 2.5rem;
+  font-size: 0.8rem;
+  width: 24rem;
+}
+
+#search {
+  font-weight: bold;
+  font-size: 1rem;
+  height: 2rem;
+  width: 8rem;
+
+
+
+
+}
+
+#msgid {
+  width: 24rem;
+}
+
+#sendid {
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 24rem;
+}
+
+.form-inline {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+fieldset label {
+  width: 12rem;
+  font-size: 1rem;
+}
+
+.btn-secondary {
+  background-color: lightgray;
+  width: 12rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* aligns the images from the API */
+.grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+}
+
+.grid-img {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.Logo {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  #emailMe,
+  #linkedin {
+    height: 1.75rem;
+    width: 2rem;
+  }
+
+  #gitHub {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #giphy-img {
+    height: 2.5rem;
+    width: 3rem;
+  }
+
+  #contactImg {
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: 1rem 0rem;
+  }
+
+  #aboutImg {
+    height: 10rem;
+    width: 10rem;
+    border-style: double;
+    border-color: #888888;
+    background: white;
+    border-radius: 50%;
+    margin: 1rem -1rem;
+    text-align: center;
+  }
+
+  #aboutInfo {
+    padding: 0.25rem;
+    font-size: 0.5rem;
+    text-align: left;
+  }
+
+  #emailid,
+  #nameid,
+  #sendid {
+    height: 2.5rem;
+    font-size: 0.5rem;
+    width: 12rem;
+  }
+
+  #msgid {
+    height: 5rem;
+    font-size: 0.5rem;
+    width: 12rem;
+  }
+
+  .home {
+    text-align: center;
+  }
+
+  figcaption {
+    font-size: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .grid-img {
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+
+
+
+  ;
+}
+
+/*# sourceMappingURL=style.css.map */
