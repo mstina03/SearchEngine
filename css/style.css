@@ -51,7 +51,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   background: rgb(162, 12, 97, .3);
   width: 15rem;
   height: 5rem;
-  display: flex;
 
 }
 
@@ -77,13 +76,26 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   height: 2rem;
   color: black;
   font-weight: bold;
+  margin-top: 4px;
+ 
+  
 }
 
 .line {
-  /* border: 5px solid #936dec; */
+  border: 1px solid black;
   background: rgb(162, 12, 97);
   height: 2.5rem;
   width: 18rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sbutton {
+
+  height: 2.5rem;
+  width: 18rem;
+  margin-top: 40px;
+  margin-bottom: 25px;
 }
 
 #gifnumber,
@@ -91,9 +103,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   width: 18rem;
   text-align: center;
   height: 2rem;
+  border: 1px solid black;
+
 }
-
-
 
 
 footer {
@@ -204,6 +216,10 @@ figcaption {
   font-size: 1rem;
   height: 2rem;
   width: 8rem;
+  background: rgb(162, 12, 97);
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 #msgid {
