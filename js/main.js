@@ -19,18 +19,18 @@ $(function () {
             } else if (count > 32) {
                 alert("You entered a number greater than 32, only 32 images will be diplayed...")
                 count = 32;
-            }            
+            }
         }
 
         var api_key = "ppBEiy71y5X2tugdfoKgFDp4XLBp22iD";
-        var myUrl     = `https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${api_key}&limit=${count}`;
+        var myUrl = `https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${api_key}&limit=${count}`;
 
 
         $.get(myUrl).done(function (response) {
-           
+
             for (var i = 0; i < response.data.length; i++) {
                 var imageURL = '"' + response.data[i].images.preview_webp.url + '"';
-                $('.grid-container').append(`<img class="grid-img" src=${imageURL}>`);  
+                $('.grid-container').append(`<img class="grid-img" src=${imageURL}>`);
             }
 
         });
