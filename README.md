@@ -23,5 +23,5 @@ Use will type in a keyword and number of GIFs they want returned then press the 
 3. Improve input validations
 
 ### User Stories
-1. AS A want to be funny person I WANT to type in a keyword and have the related items returned to me SO THAT I can quickly find what I am looking for
+1. As a user I want to type in a keyword and have the related items returned to me SO THAT I can quickly find what I am looking for
 2. As a user I will like a moble freindly application that will allow me to type in a keyword and have the related items returned to me in a mobile friendly output

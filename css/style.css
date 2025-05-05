@@ -19,8 +19,22 @@ i {
   font-size: 25px;
 }
 
+h2{
+  text-align: left;
+  margin-bottom: 3rem !important;
+}
+
 .navbar-inverse {
   background-color: rgb(162, 12, 97);
+}
+
+.active {
+  background-color: #888888;
+}
+
+.shade {
+  background-color: rgb(255, 255, 255, .6);
+
 }
 
 .homecols {
@@ -81,7 +95,6 @@ footer {
 }
 
 #aboutImg {
-  height: 20rem;
   width: 20rem;
   border-style: double;
   border-color: #888888;
@@ -182,10 +195,6 @@ figcaption {
   font-size: 1rem;
   height: 2rem;
   width: 8rem;
-
-
-
-
 }
 
 #msgid {
@@ -196,6 +205,7 @@ figcaption {
   font-weight: bold;
   font-size: 1.25rem;
   width: 24rem;
+  background-color: rgb(162, 12, 97);
 }
 
 .form-inline {
