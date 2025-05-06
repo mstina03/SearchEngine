@@ -95,7 +95,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 footer {
   position: relative;
   margin-top: 3rem;
-  /* negative value of footer height */
   height: 3rem;
   clear: both;
 }
@@ -115,22 +114,6 @@ figure {
 }
 
 
-#giphy-img {
-  height: 3rem;
-  width: 5rem;
-}
-
-#emailMe,
-#linkedin {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-#gitHub {
-  height: 2.8rem;
-  width: 2.5rem;
-}
-
 .about {
   text-align: center;
 }
@@ -149,32 +132,14 @@ figcaption {
 
 .contact {
   padding: 2rem 2rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
-.Inquiry {
-  height: 2.5rem;
-  width: 23.75rem;
-  font-size: 2rem;
-  text-align: left;
-}
-
-
 
 
 .homedisplay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -231,20 +196,11 @@ fieldset label {
 
 /* aligns the images from the API */
 .grid-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -ms-flex-line-pack: distribute;
   align-content: space-around;
 }
 
@@ -256,36 +212,15 @@ fieldset label {
 
 #logo {
   color: white;
-  
+
 }
-  
+
 
 @media (max-width: 768px) {
   h1 {
     font-size: 1.25rem;
   }
 
-  #emailMe,
-  #linkedin {
-    height: 1.75rem;
-    width: 2rem;
-  }
-
-  #gitHub {
-    height: 2rem;
-    width: 2rem;
-  }
-
-  #giphy-img {
-    height: 2.5rem;
-    width: 3rem;
-  }
-
-  #contactImg {
-    height: 7.5rem;
-    width: 7.5rem;
-    margin: 1rem 0rem;
-  }
 
   #aboutImg {
 
@@ -295,8 +230,6 @@ fieldset label {
     background: white;
     border-radius: 50%;
   }
-
-
 
   #aboutInfo {
     padding: 0.25rem;
@@ -318,9 +251,6 @@ fieldset label {
     width: 12rem;
   }
 
-  .home {
-    text-align: center;
-  }
 
   figcaption {
     font-size: 0.5rem;
@@ -335,5 +265,3 @@ fieldset label {
   }
 
 }
-
-/*# sourceMappingURL=style.css.map */
