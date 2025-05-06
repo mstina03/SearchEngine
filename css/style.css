@@ -176,6 +176,8 @@ figcaption {
   width: 24rem;
   background-color: rgb(162, 12, 97);
   text-align: center;
+  color: black;
+  
 }
 
 .form-inline {
