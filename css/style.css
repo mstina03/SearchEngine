@@ -145,12 +145,13 @@ figcaption {
 
 
 #emailid,
-#nameid,
-#sendid {
+#nameid
+{
   height: 2.5rem;
   font-size: 0.8rem;
   width: 24rem;
 }
+
 
 #search {
   font-weight: bold;
@@ -172,6 +173,7 @@ figcaption {
   font-size: 1.25rem;
   width: 24rem;
   background-color: rgb(162, 12, 97);
+  text-align: center;
 }
 
 .form-inline {
