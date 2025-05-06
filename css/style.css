@@ -62,7 +62,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   height: 2rem;
   color: black;
   font-weight: bold;
-  margin-top: 4px;
+  margin-top: 10px;
+  margin-bottom: 0;
 
 }
 
@@ -87,7 +88,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   width: 18rem;
   text-align: center;
   height: 2rem;
-  border: 1px solid black;
+  border: px solid black;
+  margin-top: 0;
 
 }
 
