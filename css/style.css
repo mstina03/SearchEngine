@@ -54,21 +54,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 }
 
-.homebox {
-
-  padding: 3rem;
-  background-color: rgb(162, 12, 97, .3);
-  box-shadow: #888888;
-  width: 25rem;
-  align-content: center;
-}
-
 
 .homelabel {
 
   text-align: center;
   font-size: 1rem;
-  width: 18rem;
   height: 2rem;
   color: black;
   font-weight: bold;
@@ -80,7 +70,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   border: 1px solid black;
   background: rgb(162, 12, 97);
   height: 2.5rem;
-  width: 18rem;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -140,12 +129,6 @@ figure {
 #gitHub {
   height: 2.8rem;
   width: 2.5rem;
-}
-
-#emailMe:hover,
-#linkedin:hover,
-#gitHub:hover {
-  background-color: #936dec;
 }
 
 .about {
@@ -271,9 +254,11 @@ fieldset label {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.Logo {
+#logo {
   color: white;
+  
 }
+  
 
 @media (max-width: 768px) {
   h1 {

@@ -8,6 +8,12 @@
     <meta name="keywords" content="HTML,CSS,JavaScript, Bootstrap">
     <meta name="author" content="Tina Smith" />
     <title>Giphy Search</title>
+    <link rel="icon" type="image/x-icon" href="./img/giphy-icon.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -31,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="./index.html">Giphy Search</a>
+                    <a id="logo" class="navbar-brand limelight-regular" href="./index.html"> Giphy Search</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
@@ -46,7 +52,7 @@
                         <li><a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
                                         class="fa-brands fa-linkedin"></i> LinkedIn</span> </a></li>
                         <li><a href="./contact.html" target="_blank"><span><i
-                                        class="fa-solid fa-envelope-open-text"></i> Contact Me</span> </a></li>
+                                        class="fa-solid fa-envelope-open-text"></i> Email</span> </a></li>
                     </ul>
                 </div>
             </div>
@@ -59,17 +65,17 @@
             <div class="row homedisplay">
                 <div class="col-md-4 ">
                     <div class="line">
-                        <label class="homelabel">Keyword Search:</label>
+                        <label class="homelabel limelight-regular">Keyword Search:</label>
 
-                        <input class="form-control" type="text" placeholder="Enter Keyword" id="keyword" maxlength="20"
+                        <input class="form-control limelight-regular" type="text" placeholder="Enter Keyword" id="keyword" maxlength="20"
                             pattern="[A-Za-z]" required>
                     </div>
                 </div>
                 <div class="col-md-4 ">
                     <div class="line">
-                        <label class="homelabel">Nubmer:</label>
+                        <label class="homelabel limelight-regular">Nubmer:</label>
 
-                        <input class="form-control" type="number" max="30" size="2" placeholder="Enter Number (1-32)"
+                        <input class="form-control limelight-regular" type="number" max="30" size="2" placeholder="Enter Number (1-32)"
                             id="gifnumber" min="1">
 
                     </div>
@@ -81,7 +87,7 @@
                 <div class="col-md-4">
                     <div class="sbutton">
                         <label class="homelabel hidden">GIF Search:</label>
-                        <button type="submit" id="search">Search</button>
+                        <button class="limelight-regular" type="submit" id="search">Search</button>
                     </div>
                 </div>
             </div>
@@ -98,9 +104,7 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
 
-                <footer>
-
-                </footer>
+                <footer></footer>
             </div>
             <div class="col-sm-4"></div>
         </div>
