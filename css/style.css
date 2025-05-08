@@ -19,6 +19,17 @@ i {
   font-size: 25px;
 }
 
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.warning {
+  color: rgb(162, 12, 97);
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .limelight-regular {
   font-family: "Limelight", sans-serif;
@@ -147,8 +158,7 @@ figcaption {
 
 
 #emailid,
-#nameid
-{
+#nameid {
   height: 2.5rem;
   font-size: 0.8rem;
   width: 24rem;
@@ -177,7 +187,7 @@ figcaption {
   background-color: rgb(162, 12, 97);
   text-align: center;
   color: black;
-  
+
 }
 
 .form-inline {

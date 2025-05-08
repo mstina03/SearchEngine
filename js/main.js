@@ -1,29 +1,39 @@
 
 $(function () {
 
+    //debugger;    
     $('#search').click(function (event) {
 
         event.preventDefault();
         $('.grid-container').empty();
 
+        keyError.textContent = "";
+        countError.textContent = "";
         var keyword = $('#keyword').val();
         var count = $('#gifnumber').val();
 
+
         if (keyword == null || keyword == "") {
-            alert("Enter a keyword to continue..");
+            keyError.textContent = 'Keyword is required, Enter a keyword to continue..';
+            keyError.style.display = 'block';
         }
         if (keyword.length > 0) {
             if (count == null || count == "" || count < 1) {
                 count = 1;
-                alert("You entered a count less than 1, the default count of 1 will be used...")
+               
+                countError.textContent = 'You entered a count less than 1, the default count of 1 will be used...';
+                countError.style.display = 'block';
+
             } else if (count > 32) {
-                alert("You entered a number greater than 32, only 32 images will be diplayed...")
+               
+                countError.textContent = 'You entered a number greater than 32, only 32 images will be diplayed...';
+                countError.style.display = 'block';
                 count = 32;
             }
         }
 
         var api_key = "ppBEiy71y5X2tugdfoKgFDp4XLBp22iD";
-        var myUrl = `https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${api_key}&limit=${count}`;
+        var myUrl = `https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${api_key}&limit=${count}&rating=g`;
 
 
         $.get(myUrl).done(function (response) {
