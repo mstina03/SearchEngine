@@ -6,13 +6,35 @@ html {
 
 
 body {
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background-color: rgb(240, 162, 174);
   background-image: url(../img/pink_forest1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 60px;
+  /* Height of the footer */
+}
+
+#container {
+  min-height: 100vh;
+  position: relative;
 }
 
 i {
@@ -105,12 +127,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 
-footer {
-  position: relative;
-  margin-top: 3rem;
-  height: 3rem;
-  clear: both;
-}
 
 #aboutImg {
   width: 20rem;
@@ -122,13 +138,14 @@ footer {
   text-align: center;
 }
 
-figure {
+.figure {
   text-align: center;
 }
 
 
 .about {
-  text-align: center;
+  padding: 2rem 2rem;
+  /* text-align: center; */
 }
 
 #aboutInfo {
@@ -139,7 +156,6 @@ figure {
 
 figcaption {
   font-size: 1rem;
-  text-align: center;
   font-weight: bold;
 }
 

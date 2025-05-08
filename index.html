@@ -24,105 +24,114 @@
 
 </head>
 
+<section id="container" class="shade">
 
-<body>
-    <header>
+    <body>
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a id="logo" class="navbar-brand limelight-regular" href="./index.html"> Giphy Search</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="./index.html" title="Home Page">Home</a></li>
-                        <li><a href="./about.html" title="About The Developer">About</a></li>
-                        <li><a href="./contact.html" title="Contact The Developer">Contact</a></li>
+        <header>
 
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- <li><a href="./about.html"><span><i class="fa-solid fa-person-dress"></i> About</span> </a></li> -->
-                        <li><a href="https://mstina03.github.io" target="_blank"><span><i
-                                        class="fa-brands fa-github"></i> GitHub</span> </a></li>
-                        <li><a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
-                                        class="fa-brands fa-linkedin"></i> LinkedIn</span> </a></li>
-                        <li><a href="./contact.html"><span><i class="fa-solid fa-envelope-open-text"></i> Email</span>
-                            </a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a id="logo" class="navbar-brand limelight-regular" href="./index.html"> Giphy Search</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="./index.html" title="Home Page">Home</a></li>
+                            <li><a href="./about.html" title="About The Developer">About</a></li>
+                            <li><a href="./contact.html" title="Contact The Developer">Contact</a></li>
 
-    </header>
-
-    <form class="form-inline shade" action="" method="post">
-
-        <div class="container">
-            <div class="row homedisplay">
-                <div class="col-12 col-md-4 ">
-                    <div class="line">
-                        <label class="homelabel limelight-regular">Keyword Search:</label>
-
-                        <input class="form-control limelight-regular" type="text" placeholder="Enter Keyword"
-                            id="keyword" name="keyword" required maxlength="20" pattern="[A-Za-z]">
-
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- <li><a href="./about.html"><span><i class="fa-solid fa-person-dress"></i> About</span> </a></li> -->
+                            <li><a href="https://mstina03.github.io" target="_blank"><span><i
+                                            class="fa-brands fa-github"></i> GitHub</span> </a></li>
+                            <li><a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
+                                            class="fa-brands fa-linkedin"></i> LinkedIn</span> </a></li>
+                            <li><a href="./contact.html"><span><i class="fa-solid fa-envelope-open-text"></i>
+                                        Email</span>
+                                </a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 ">
-                    <div class="line">
-                        <label class="homelabel limelight-regular">Nubmer:</label>
+            </nav>
 
-                        <input class="form-control limelight-regular" type="number" max="32"
-                            placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" required min="1"
-                            value="1">
+        </header>
+        <section id="body">
+            <form class="form-inline">
+
+                <div class="container">
+                    <div class="row homedisplay">
+                        <div class="col-12 col-md-4 ">
+                            <div class="line">
+                                <label class="homelabel limelight-regular">Keyword Search:</label>
+
+                                <input class="form-control limelight-regular" type="text" placeholder="Enter Keyword"
+                                    id="keyword" name="keyword" required maxlength="20" pattern="[A-Za-z]">
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 ">
+                            <div class="line">
+                                <label class="homelabel limelight-regular">Nubmer:</label>
+
+                                <input class="form-control limelight-regular" type="number" max="32"
+                                    placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" required min="1"
+                                    value="1">
+
+                            </div>
+                        </div>
+
 
                     </div>
-                </div>
-
-
-            </div>
-            <div class="row homedisplay">
-                <div class="col-12 col-md-4">
-                    <div class="sbutton">
-                        <label class="homelabel hidden">GIF Search:</label>
-                        <button class="limelight-regular" type="submit" id="search">Search</button>
+                    <div class="row homedisplay">
+                        <div class="col-12 col-md-4">
+                            <div class="sbutton">
+                                <label class="homelabel hidden">GIF Search:</label>
+                                <button class="limelight-regular" type="submit" id="search">Search</button>
+                            </div>
+                        </div>
                     </div>
+                    <span id="keyError" class="error" style="display: none;"></span>
+                    <span id="countError" class="warning" style="display: none;"></span>
                 </div>
+
+            </form>
+
+
+            <div class="grid-container">
             </div>
-            <span id="keyError" class="error" style="display: none;"></span>
-            <span id="countError" class="warning" style="display: none;"></span>
-        </div>
 
-    </form>
+            </div>
+        </section>
 
 
-    <div class="grid-container">
-    </div>
-
-
-    <div>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-
-                <footer></footer>
+                <footer>
+                    <p>This page uses GIF images from Giphy. All rights reserved. <a
+                            href="https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-User-Terms-of-Service"
+                            target="_blank">Learn More</a></p>
+                </footer>
             </div>
             <div class="col-md-4"></div>
         </div>
-    </div>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-</body>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+</section>
 
 </html>

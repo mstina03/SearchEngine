@@ -25,101 +25,99 @@
 
 </head>
 
+<section id="container" class="shade">
 
-<body>
-    <header>
+    <body>
+        <header>
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a id="logo" class="navbar-brand limelight-regular" href="./index.html"> Giphy Search</a>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a id="logo" class="navbar-brand limelight-regular" href="./index.html"> Giphy Search</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="./index.html" title="Home Page">Home</a></li>
+                            <li><a href="./about.html" title="About The Developer">About</a></li>
+                            <li class="active"><a href="./contact.html" title="Contact The Developer">Contact</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://mstina03.github.io" target="_blank"><span><i
+                                            class="fa-brands fa-github"></i> GitHub</span>
+                                </a></li>
+                            <li><a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
+                                            class="fa-brands fa-linkedin"></i>
+                                        LinkedIn</span> </a></li>
+                            <li><a href="./contact.html"><span><i class="fa-solid fa-envelope-open-text"></i>
+                                        Email</span>
+                                </a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="./index.html" title="Home Page">Home</a></li>
-                        <li><a href="./about.html" title="About The Developer">About</a></li>
-                        <li class="active"><a href="./contact.html" title="Contact The Developer">Contact</a></li>
+            </nav>
 
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://mstina03.github.io" target="_blank"><span><i
-                                        class="fa-brands fa-github"></i> GitHub</span>
-                            </a></li>
-                        <li><a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
-                                        class="fa-brands fa-linkedin"></i>
-                                    LinkedIn</span> </a></li>
-                        <li><a href="./contact.html"><span><i class="fa-solid fa-envelope-open-text"></i> Email</span>
-                            </a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </header>
 
-    </header>
-
-    <div class="contact">
-
-        <div class="container shade">
-            <h1 class="limelight-regular">Contact Me...</h1>
+        <div class="contact">
+            <h1 class="limelight-regular">Contact Me</h1>
             <hr>
+            
+            <div class="container">
 
-            <div class="row">
-                <div class="col-12 col-md-4"></div>
-                <div class="col-12 col-md-4">
-                    <form action="https://formspree.io/f/xvgaanwg" method="POST">
 
-                        <fieldset>
+                <div class="row">
+                    <div class="col-12 col-md-4"></div>
+                    <div class="col-12 col-md-4">
+                        <form action="https://formspree.io/f/xvgaanwg" method="POST">
 
-                            <div>
-                                <label>Name: </label>
-                                <p><input id="nameid" type="text" required name="name" /></p>
-                            </div>
-                            <div>
-                                <label>E-mail Address: </label>
-                                <p><input id="emailid" type="email" required name="email" /></p>
-                            </div>
-                            <div>
-                                <label>Message:</label>
+                            <fieldset>
+
                                 <div>
-                                    <p><textarea id="msgid" name="paragraph_text" cols="50" rows="10"
-                                            required></textarea></p>
-                                    <input class="limelight-regular" id="sendid" type="submit" value="Send Email"
-                                        name="submit" />
-                                    <br>
+                                    <label>Name: </label>
+                                    <p><input id="nameid" type="text" required name="name" /></p>
                                 </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <hr>
+                                <div>
+                                    <label>E-mail Address: </label>
+                                    <p><input id="emailid" type="email" required name="email" /></p>
+                                </div>
+                                <div>
+                                    <label>Message:</label>
+                                    <div>
+                                        <p><textarea id="msgid" name="paragraph_text" cols="50" rows="10"
+                                                required></textarea></p>
+                                        <input class="limelight-regular" id="sendid" type="submit" value="Send Email"
+                                            name="submit" />
+                                        <br>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                     
+                    </div>
+                    <div class="col-12 col-md-4"></div>
                 </div>
-                <div class="col-12 col-md-4"></div>
             </div>
         </div>
-    </div>
-    <div>
-        <div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-
-                    <footer></footer>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
+         <hr>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
         </div>
-    </div>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</section>
 
 </html>
