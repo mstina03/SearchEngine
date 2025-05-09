@@ -17,14 +17,21 @@ body {
 
 }
 
-footer {
+#footer {
   position: absolute;
   bottom: 0;
+  width: 100vw;
   height: 90px;
+  margin: 0%;
+}
+
+footer {
+ 
   color: black;
   font-size: 15px;
   text-align: center;
   padding-top: 30px;
+
 }
 
 #body {
@@ -32,6 +39,7 @@ footer {
   padding-bottom: 90px;
   /* Height of the footer */
 }
+
 
 #container {
   min-height: 100vh;
@@ -298,3 +306,21 @@ fieldset label {
   }
 
 }
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
