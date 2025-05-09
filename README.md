@@ -11,7 +11,7 @@ Use will type in a keyword and number of GIFs they want returned then press the 
 
 ### Technologies Used 
 1. html
-2. scss/css
+2. css
 3. bootscrap
 4. javaScript
 5. jQuery
