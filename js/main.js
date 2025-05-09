@@ -21,12 +21,12 @@ $(function () {
             if (count == null || count == "" || count < 1) {
                 count = 1;
                
-                countError.textContent = 'You entered a count less than 1, the default count of 1 will be used...';
+                countError.textContent = 'The number you entered is less than 1, the minimum count of 1 will be used...';
                 countError.style.display = 'block';
 
             } else if (count > 32) {
                
-                countError.textContent = 'You entered a number greater than 32, only 32 images will be diplayed...';
+                countError.textContent = 'The number you entered is greater than 32, the Maximum count of 32 will be used...';
                 countError.style.display = 'block';
                 count = 32;
             }
