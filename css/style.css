@@ -106,7 +106,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 0;
-  display: flex;
 
 }
 
@@ -114,8 +113,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   border: 1px solid black;
   background: rgb(162, 12, 97);
   height: 2.5rem;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  width: 18rem;
 }
 
 .sbutton {
@@ -133,6 +132,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   height: 2rem;
   border: px solid black;
   margin-top: 0;
+  margin-bottom: 40px;
 
 }
 
@@ -151,6 +151,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .figure {
   text-align: center;
 }
+
 
 
 .about {
@@ -176,8 +177,6 @@ figcaption {
 
 
 .homedisplay {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -190,6 +189,9 @@ figcaption {
   width: 24rem;
 }
 
+.displayblock {
+  display: inline-block;
+}
 
 #search {
   font-weight: bold;
@@ -216,7 +218,6 @@ figcaption {
   text-align: center;
   color: black;
   padding: 2px;
-
 }
 
 .form-inline {

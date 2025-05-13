@@ -66,36 +66,31 @@
             <form class="form-inline">
 
                 <div class="container">
-                    <div class="row homedisplay">
-                        <div class="col-12 col-md-4 ">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
                             <div class="line">
-                                <label class="homelabel limelight-regular">Keyword Search:</label>
-
+                                <label for="keyword" class="homelabel limelight-regular">Keyword Search:</label>
                                 <input class="form-control limelight-regular" type="text" placeholder="Enter Keyword"
                                     id="keyword" name="keyword" required maxlength="20" pattern="[A-Za-z]">
 
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 ">
+                        <div class="col-12 col-md-4">
                             <div class="line">
-                                <label class="homelabel limelight-regular">Nubmer:</label>
-
+                                <label for="gifnumber" class="homelabel limelight-regular">Nubmer:</label>
                                 <input class="form-control limelight-regular" type="number" max="32"
                                     placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" required min="1">
 
                             </div>
                         </div>
-
-
-                    </div>
-                    <div class="row homedisplay">
                         <div class="col-12 col-md-4">
                             <div class="sbutton">
-                                <label class="homelabel hidden">GIF Search:</label>
                                 <button class="limelight-regular" type="submit" id="search">Search</button>
                             </div>
                         </div>
+
                     </div>
+
                     <span id="keyError" class="error" style="display: none;"></span>
                     <span id="countError" class="warning" style="display: none;"></span>
                 </div>
