@@ -76,28 +76,26 @@
                     <div class="col-12 col-md-4">
                         <form action="https://formspree.io/f/xvgaanwg" method="POST">
 
+
                             <fieldset class="homedisplay">
-
-                                <div>
-                                    <label>Name: </label>
-                                    <p><input id="nameid" type="text" required name="name" /></p>
+                                <div class="mb-3">
+                                    <label for="nameid" class="form-label">Name:</label>
+                                    <input type="email" class="form-control limelight-regular" id="nameid"
+                                        placeholder="" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailid" class="form-label">E-mail Address:</label>
+                                    <input type="email" class="form-control limelight-regular" id="emailid"
+                                        placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="msgid" class="form-label">Message:</label>
+                                    <textarea class="form-control limelight-regular" id="msgid" rows="10"
+                                        required></textarea>
                                 </div>
                                 <div>
-                                    <label>E-mail Address: </label>
-                                    <p><input id="emailid" type="email" required name="email" /></p>
-                                </div>
-                                <div>
-                                    <label>Message:</label>
-                                    <div>
-                                        <p><textarea id="msgid" name="paragraph_text" cols="50" rows="10"
-                                                required></textarea></p>
-                                    </div>
-                                    <div class="homedisplay">
-                                        <input class="limelight-regular" id="sendid" type="submit" value="Send Email"
-                                            name="submit" />
-                                    </div>
-
-
+                                    <input class="form-control limelight-regular" id="sendid" type="submit"
+                                        value="Send Email" name="submit" />
                                 </div>
                             </fieldset>
                         </form>
