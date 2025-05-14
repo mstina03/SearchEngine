@@ -85,17 +85,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .shade {
   background-color: rgb(255, 255, 255, .6);
-
 }
-
-.homecols {
-
-  background: rgb(162, 12, 97, .3);
-  width: 15rem;
-  height: 5rem;
-
-}
-
 
 .homelabel {
 
@@ -200,6 +190,7 @@ figcaption {
   color: black;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 
@@ -224,6 +215,11 @@ figcaption {
 fieldset label {
   width: 12rem;
   font-size: 1rem;
+}
+
+fieldset {
+
+  padding-right: 40px;
 }
 
 .hidden {
