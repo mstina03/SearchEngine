@@ -106,7 +106,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 0;
-  
+
 }
 
 .sbutton {
@@ -179,7 +179,12 @@ figcaption {
 #nameid {
   height: 2.5rem;
   font-size: 0.8rem;
-  width: 24rem;
+  width: 20rem;
+}
+
+#msgid {
+  width: 20rem;
+
 }
 
 .displayblock {
@@ -197,10 +202,7 @@ figcaption {
   border-radius: 4px;
 }
 
-#msgid {
-  width: 24rem;
 
-}
 
 #sendid {
   font-weight: bold;
