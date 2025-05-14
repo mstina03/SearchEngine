@@ -14,19 +14,19 @@ $(function () {
 
 
         if (keyword == null || keyword == "") {
-            keyError.textContent = 'Keyword is required, Enter a keyword to continue..';
+            keyError.textContent = 'Enter a keyword to continue...';
             keyError.style.display = 'block';
         }
         if (keyword.length > 0) {
             if (count == null || count == "" || count < 1) {
                 count = 1;
                
-                countError.textContent = 'The number you entered is less than 1, the minimum count of 1 will be used...';
+                countError.textContent = 'The number you entered is less than 1, displaying one image...';
                 countError.style.display = 'block';
 
             } else if (count > 32) {
                
-                countError.textContent = 'The number you entered is greater than 32, the Maximum count of 32 will be used...';
+                countError.textContent = 'The number you entered is greater than 32, displaying Max images...';
                 countError.style.display = 'block';
                 count = 32;
             }
