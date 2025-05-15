@@ -20,12 +20,12 @@ $(function () {
         if (keyword.length > 0) {
             if (count == null || count == "" || count < 1) {
                 count = 1;
-               
+
                 countError.textContent = 'The number you entered is less than 1, displaying one image...';
                 countError.style.display = 'block';
 
             } else if (count > 32) {
-               
+
                 countError.textContent = 'The number you entered is greater than 32, displaying Max images...';
                 countError.style.display = 'block';
                 count = 32;

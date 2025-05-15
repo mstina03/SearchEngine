@@ -107,7 +107,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 25px;
 }
 
-#gifnumber,
 #keyword {
   width: 12rem;
   text-align: center;
@@ -115,10 +114,17 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   border: px solid black;
   margin-top: 0;
   margin-bottom: 40px;
-
 }
 
-
+#gifnumber {
+  width: 12rem;
+  text-align: center;
+  height: 2rem;
+  border: px solid black;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 6px 12px 6px 12px;
+}
 
 #aboutImg {
   width: 20rem;
