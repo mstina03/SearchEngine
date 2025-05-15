@@ -162,7 +162,10 @@ figcaption {
   padding: 2rem 2rem;
   align-items: center;
 }
-
+.contactform{
+  margin: 20px 20px 20px 20px;
+ 
+}
 
 .homedisplay {
   align-items: center;
@@ -221,11 +224,6 @@ figcaption {
 fieldset label {
   width: 12rem;
   font-size: 1rem;
-}
-
-fieldset {
-
-  padding-right: 40px;
 }
 
 .hidden {
