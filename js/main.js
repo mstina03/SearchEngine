@@ -9,8 +9,10 @@ $(function () {
 
         keyError.textContent = "";
         countError.textContent = "";
+        
         var keyword = $('#keyword').val();
         var count = $('#gifnumber').val();
+        count = Math.floor(count);
 
 
         if (keyword === null || keyword === "") {
