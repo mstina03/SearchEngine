@@ -1,7 +1,7 @@
 
 $(function () {
 
-    //debugger;    
+
     $('#search').click(function (event) {
 
         event.preventDefault();
@@ -13,12 +13,12 @@ $(function () {
         var count = $('#gifnumber').val();
 
 
-        if (keyword == null || keyword == "") {
+        if (keyword === null || keyword === "") {
             keyError.textContent = 'Enter a keyword to continue...';
             keyError.style.display = 'block';
         }
         if (keyword.length > 0) {
-            if (count == null || count == "" || count < 1) {
+            if (count === null || count === "" || count < 1) {
                 count = 1;
 
                 countError.textContent = 'The number you entered is less than 1, displaying one image...';
