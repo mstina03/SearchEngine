@@ -3,33 +3,29 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Giphy Search Engine" />
-    <meta name="keywords" content="HTML,CSS,JavaScript, Bootstrap">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Bootstrap" />
     <meta name="author" content="Tina Smith" />
     <title>Giphy Search</title>
     <link rel="icon" type="image/x-icon" href="./img/giphy-icon.png" />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
 
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
     <!-- Latest compiled Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
-
 </head>
-
-
 
 <body>
     <section id="container" class="shade">
         <header>
-
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -38,56 +34,71 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a id="logo" class="navbar-brand limelight-regular" href="./index.html"> Giphy Search</a>
+                        <a id="logo" class="navbar-brand limelight-regular" href="./index.html">
+                            Giphy Search</a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="./index.html" title="Home Page">Home</a></li>
-                            <li><a href="./about.html" title="About The Developer">About</a></li>
-                            <li><a href="./contact.html" title="Contact The Developer">Contact</a></li>
-
+                            <li class="active">
+                                <a href="./index.html" title="Home Page">Home</a>
+                            </li>
+                            <li>
+                                <a href="./about.html" title="About The Developer">About</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html" title="Contact The Developer">Contact</a>
+                            </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-
-                            <li><a href="https://mstina03.github.io" target="_blank"><span><i
-                                            class="fa-brands fa-github"></i> GitHub</span> </a></li>
-                            <li><a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
-                                            class="fa-brands fa-linkedin"></i> LinkedIn</span> </a></li>
-                            <li><a href="./contact.html"><span><i class="fa-solid fa-envelope-open-text"></i>
+                            <li>
+                                <a href="https://mstina03.github.io" target="_blank"><span><i
+                                            class="fa-brands fa-github"></i> GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/smithtina1203" target="_blank"><span><i
+                                            class="fa-brands fa-linkedin"></i> LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html"><span><i class="fa-solid fa-envelope-open-text"></i>
                                         Email</span>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
         </header>
         <section id="body">
             <form class="form-inline">
-
                 <div>
-                    <span id="keyError" class="error" style="display: none;"></span>
-                    <span id="countError" class="warning" style="display: none;"></span>
+                    <span id="keyError" class="error" style="display: none"></span>
+                    <span id="countError" class="warning" style="display: none"></span>
                 </div>
 
                 <div class="container homedisplay">
                     <div class="row shade">
                         <div class="col-12 col-sm-2"></div>
-                        <div class="col-12 col-md-8 ">
+                        <div class="col-12 col-md-8">
                             <div>
                                 <label for="keyword" class="homelabel limelight-regular">Keyword:</label>
                                 <input class="form-control limelight-regular" type="search" placeholder="Enter Keyword"
-                                    id="keyword" name="keyword" required maxlength="20" pattern="[A-Za-z]">
+                                    id="keyword" name="keyword" required maxlength="20" pattern="[A-Za-z]" />
                             </div>
                             <div>
-                                <label for="gifnumber" class="homelabel limelight-regular">Nubmer: </label>
+                                <label for="gifnumber" class="homelabel limelight-regular">Nubmer:
+                                </label>
                             </div>
                             <div>
                                 <input class="form-control limelight-regular" type="number" max="32"
-                                    placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" required min="1">
+                                    placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" required
+                                    min="1" />
                             </div>
                             <div>
-                                <button class="limelight-regular" type="submit" id="search">Search</button>
+                                <button class="limelight-regular" type="submit" id="search">
+                                    Search
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-2"></div>
@@ -95,17 +106,18 @@
                 </div>
             </form>
 
-
             <div class="grid-container"></div>
         </section>
-
 
         <div class="row shade" id="footer">
             <div class="col-12 col-md-4"></div>
             <div class="col-12 col-md-4 homedisplay">
                 <footer>
-                    <p style="margin-bottom: 0%;">This page uses GIF images from GIPHY. </p>
-                    <p>All rights reserved.
+                    <p style="margin-bottom: 0%">
+                        This page uses GIF images from GIPHY.
+                    </p>
+                    <p>
+                        All rights reserved.
                         <a href="https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-User-Terms-of-Service"
                             target="_blank">Learn More</a>
                     </p>
@@ -113,7 +125,6 @@
             </div>
             <div class="col-12 col-md-4"></div>
         </div>
-
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
