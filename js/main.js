@@ -16,19 +16,19 @@ $(function () {
 
 
         if (keyword === null || keyword === "") {
-            keyError.textContent = 'Enter a keyword to continue...';
+            keyError.textContent = 'Keyword required';
             keyError.style.display = 'block';
         }
         if (keyword.length > 0) {
             if (count === null || count === "" || count < 1) {
                 count = 1;
 
-                countError.textContent = 'The number you entered is less than 1, displaying one image...';
+                countError.textContent = 'Min is 1';
                 countError.style.display = 'block';
 
             } else if (count > 32) {
 
-                countError.textContent = 'The number you entered is greater than 32, displaying Max images...';
+                countError.textContent = 'Max is 32';
                 countError.style.display = 'block';
                 count = 32;
             }

@@ -72,19 +72,23 @@
         </header>
         <section id="body">
             <form class="form-inline">
-                <div>
-                    <span id="keyError" class="error" style="display: none"></span>
-                    <span id="countError" class="warning" style="display: none"></span>
-                </div>
+                <div></div>
 
                 <div class="container homedisplay">
-                    <div class="row shade">
+                    <div class="row shade homedisplay">
                         <div class="col-12 col-sm-2"></div>
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-md-10">
                             <div>
                                 <label for="keyword" class="homelabel limelight-regular">Keyword:</label>
+                            </div>
+                            <div>
                                 <input class="form-control limelight-regular" type="search" placeholder="Enter Keyword"
-                                    id="keyword" name="keyword" required maxlength="20" pattern="[A-Za-z]" />
+                                    id="keyword" name="keyword" required maxlength="50" pattern="[a-zA-Z0-9]*"
+                                    title="Letters and numbers only" />
+
+                                <div class="error">
+                                    <span id="keyError" style="display: none"></span>
+                                </div>
                             </div>
                             <div>
                                 <label for="gifnumber" class="homelabel limelight-regular">Nubmer:
@@ -92,8 +96,11 @@
                             </div>
                             <div>
                                 <input class="form-control limelight-regular" type="number" max="32"
-                                    placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" required
-                                    min="1" />
+                                    placeholder="Enter Number (1-32)" id="gifnumber" name="gifnumber" value="16"
+                                    required title="Enter A Number (1-32)" min="1" />
+                                <div class="error">
+                                    <span id="countError" style="display: none"></span>
+                                </div>
                             </div>
                             <div>
                                 <button class="limelight-regular" type="submit" id="search">
