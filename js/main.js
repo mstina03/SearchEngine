@@ -9,6 +9,7 @@ $(function () {
 
         keyError.textContent = "";
         countError.textContent = "";
+        searchError.textContent = "";
         
         var keyword = $('#keyword').val();
         var count = $('#gifnumber').val();
@@ -21,6 +22,7 @@ $(function () {
         }
         if (keyword.length > 0) {
             if (count === null || count === "" || count < 1) {
+                
                 count = 1;
 
                 countError.textContent = 'Min is 1';
@@ -40,10 +42,19 @@ $(function () {
 
         $.get(myUrl).done(function (response) {
 
-            for (var i = 0; i < response.data.length; i++) {
-                var imageURL = '"' + response.data[i].images.preview_webp.url + '"';
-                $('.grid-container').append(`<img class="grid-img" src=${imageURL}>`);
+            if (response.data.length > 0)
+            {
+                for (var i = 0; i < response.data.length; i++) {
+                    var imageURL = '"' + response.data[i].images.preview_webp.url + '"';
+                    $('.grid-container').append(`<img class="grid-img" src=${imageURL}>`);
+                }
             }
+            else {
+                
+                searchError.textContent = `No GIFs found for ${keyword}`;
+                searchError.style.display = 'block';
+            }
+            
 
         });
 
